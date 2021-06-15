@@ -1,32 +1,32 @@
-package controllers;
+package com.example.magasinSpring.controllers;
 
-import models.Produit;
-import servicesImplement.ProduitServiceImplement;
+import com.example.magasinSpring.models.Categorie;
+import com.example.magasinSpring.servicesImplement.CategorieServiceImplement;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
 @RestController
-@RequestMapping("produits")
+@RequestMapping("categories")
 @CrossOrigin
-public class ProduitController {
+public class CategorieController {
 
     @Autowired
-    private ProduitServiceImplement service;
+    private CategorieServiceImplement service;
 
     @GetMapping("")
-    public List<Produit> findAll() {
+    public List<Categorie> findAll() {
         return this.service.findAll();
     }
 
     @GetMapping("{id}")
-    public Produit findById(@PathVariable Long id) {
+    public Categorie findById(@PathVariable Long id) {
         return this.service.findById(id);
     }
 
     @PostMapping("")
-    public Produit save(@RequestBody Produit cat) {
+    public Categorie save(@RequestBody Categorie cat) {
         return this.service.save(cat);
     }
 

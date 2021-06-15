@@ -1,4 +1,4 @@
-package models;
+package com.example.magasinSpring.models;
 
 import javax.persistence.*;
 import lombok.*;
@@ -6,12 +6,11 @@ import lombok.*;
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
-@Entity @Table(name="client")
-public class Client {	
+@Entity @Table(name="categorie")
+public class Categorie {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int id;
+	private Long id;
 	
 	private String nom;
-	private String prenom;
 }

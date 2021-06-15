@@ -1,4 +1,4 @@
-package services;
+package com.example.magasinSpring.services;
 
 import java.util.List;
 

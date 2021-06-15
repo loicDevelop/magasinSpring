@@ -1,16 +1,16 @@
-package config;
+package com.example.magasinSpring.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-import repositories.CategorieRepositorie;
-import repositories.ClientRepositorie;
-import repositories.CommandeRepositorie;
-import repositories.ProduitRepositorie;
-import servicesImplement.CategorieServiceImplement;
-import servicesImplement.ClientServiceImplement;
-import servicesImplement.CommandeServiceImplement;
-import servicesImplement.ProduitServiceImplement;
+import com.example.magasinSpring.repositories.CategorieRepositorie;
+import com.example.magasinSpring.repositories.ClientRepositorie;
+import com.example.magasinSpring.repositories.CommandeRepositorie;
+import com.example.magasinSpring.repositories.ProduitRepositorie;
+import com.example.magasinSpring.servicesImplement.CategorieServiceImplement;
+import com.example.magasinSpring.servicesImplement.ClientServiceImplement;
+import com.example.magasinSpring.servicesImplement.CommandeServiceImplement;
+import com.example.magasinSpring.servicesImplement.ProduitServiceImplement;
 
 @Configuration
 public class ServiceConfig {

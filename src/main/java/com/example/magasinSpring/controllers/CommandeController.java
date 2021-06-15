@@ -1,32 +1,32 @@
-package controllers;
+package com.example.magasinSpring.controllers;
 
-import models.Client;
-import servicesImplement.ClientServiceImplement;
+import com.example.magasinSpring.models.Commande;
+import com.example.magasinSpring.servicesImplement.CommandeServiceImplement;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
 @RestController
-@RequestMapping("clients")
+@RequestMapping("commandes")
 @CrossOrigin
-public class ClientController {
+public class CommandeController {
 
     @Autowired
-    private ClientServiceImplement service;
+    private CommandeServiceImplement service;
 
     @GetMapping("")
-    public List<Client> findAll() {
+    public List<Commande> findAll() {
         return this.service.findAll();
     }
 
     @GetMapping("{id}")
-    public Client findById(@PathVariable Long id) {
+    public Commande findById(@PathVariable Long id) {
         return this.service.findById(id);
     }
 
     @PostMapping("")
-    public Client save(@RequestBody Client client) {
+    public Commande save(@RequestBody Commande client) {
         return this.service.save(client);
     }
 

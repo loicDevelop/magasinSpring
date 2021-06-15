@@ -1,8 +1,8 @@
-package servicesImplement;
+package com.example.magasinSpring.servicesImplement;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import models.Client;
+import com.example.magasinSpring.models.Client;
 
 public class ClientServiceImplement extends GenericServiceImplement<Client> {
 

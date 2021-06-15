@@ -1,4 +1,4 @@
-package models;
+package com.example.magasinSpring.models;
 
 import javax.persistence.*;
 import lombok.*;
@@ -10,7 +10,7 @@ import lombok.*;
 public class Produit {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int id;
+	private Long id;
 	
 	private String nom;
 	private float prix;

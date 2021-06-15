@@ -1,10 +1,10 @@
-package servicesImplement;
+package com.example.magasinSpring.servicesImplement;
 
 import java.util.List;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import services.GenericService;
+import com.example.magasinSpring.services.GenericService;
 
 public class GenericServiceImplement<T> implements GenericService<T> {
 

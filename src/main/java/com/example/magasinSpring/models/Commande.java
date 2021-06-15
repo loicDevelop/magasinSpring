@@ -1,4 +1,4 @@
-package models;
+package com.example.magasinSpring.models;
 
 import java.util.List;
 
@@ -23,11 +23,11 @@ import lombok.NoArgsConstructor;
 public class Commande {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int id;
+	private Long id;
 	
 	@ManyToOne
 	@JoinColumn(name = "id_client")
-	private int client;
+	private Client client;
 	
 	@ManyToMany
 	@JoinTable( name="PRODUIT_COMMAND",
