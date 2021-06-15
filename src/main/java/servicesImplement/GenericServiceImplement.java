@@ -10,7 +10,6 @@ public class GenericServiceImplement<T> implements GenericService<T> {
 
     private JpaRepository<T, Long> repository;
     
-    public GenericServiceImplement() {}
     
 	public GenericServiceImplement(JpaRepository<T, Long> repository) {
 		this.repository = repository;
