@@ -35,4 +35,5 @@ public class Commande {
 	    inverseJoinColumns= @JoinColumn(name="commandeProduit", referencedColumnName="id")
 	)	
 	private List<Produit> produits;
+
 }
